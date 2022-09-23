@@ -1,6 +1,4 @@
-/*------------------------------------------------------------------ 
-    IMPORT FONTS 
--------------------------------------------------------------------*/
+/*Fuentes*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
@@ -8,9 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-/*------------------------------------------------------------------ 
-    IMPORT FILES 
--------------------------------------------------------------------*/
+/*Importacion de archivos*/
 
 @import url(animate.css);
 @import url(font-awesome.min.css);
@@ -19,19 +15,16 @@
 @import url(timeline.css);
 @import url(flaticon.css);
 
-/*------------------------------------------------------------------ 
-    SKELETON
--------------------------------------------------------------------*/
+/*Cuerpo*/
+* {
+	font-family: 'Roboto', sans-serif;
+}
 
 body {
 	color: #666666;
 	font-size: 15px;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.80857;
-}
-
-* {
-	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -107,8 +100,7 @@ a {
 	padding-right: 30px;
 }
 
-a,
-.btn {
+a, .btn {
 	text-decoration: none !important;
 	outline: none !important;
 	-webkit-transition: all .3s ease-in-out;
@@ -154,9 +146,7 @@ button:focus {
 	opacity: 1;
 }
 
-/*------------------------------------------------------------------ 
-   LOADER 
--------------------------------------------------------------------*/
+/*Loader*/
 
 #preloader {
 	width: 100%;
@@ -323,7 +313,7 @@ a:hover,a:focus {
 	padding-top: 0 !important;
 }
 
-/*------------------------------------------------------------------ HEADER -------------------------------------------------------------------*/
+/*Header*/
 
 .header_top {
     min-height: 98px;
@@ -348,8 +338,7 @@ a.join_bt {
     font-weight: 300;
 }
 
-a.join_bt:hover,
-a.join_bt:focus {
+a.join_bt:hover, a.join_bt:focus {
 	background: #222;
 	color: #fff !important;
 }
@@ -433,8 +422,7 @@ a.navbar-brand {
     color: #fff;
 }
 
-.top-header .navbar .navbar-collapse ul li a:hover, 
-.top-header .navbar .navbar-collapse ul li a:focus {
+.top-header .navbar .navbar-collapse ul li a:hover,  .top-header .navbar .navbar-collapse ul li a:focus {
     background: transparent;
     color: #fff;
 }
@@ -521,9 +509,7 @@ a.navbar-brand {
     background: #222;
 }
 
-
-/* search bar */
-
+/*Barra de busqueda*/
 .search-box {
     position: absolute;
     float: right;
@@ -611,7 +597,7 @@ a.navbar-brand {
 	padding-left: 15px;
 }
 
-/*------------------------------------------------------------------ Banner -------------------------------------------------------------------*/
+/*Banner*/
 
 .home-slider {
 	position: relative;
@@ -731,6 +717,7 @@ a.navbar-brand {
     font-size: 170px;
     text-transform: uppercase;
     line-height: normal;
+	color: #2E468C;
 }
 
 .slide_text h4 {
@@ -751,8 +738,8 @@ a.navbar-brand {
 }
 
 .start_exchange_bt {
-    border: solid #fff 1px;
-    color: #fff;
+    border: solid #2E468C 1px;
+    color: #2E468C;
     padding: 7px 25px;
     float: left;
     width: 220px;
@@ -789,7 +776,7 @@ a.navbar-brand {
     padding-left: 0;
 }
 
-/*------------------------------------------------------------------ About -------------------------------------------------------------------*/
+/*Acerca de*/
 
 .tooltip-1 {
 	display: inline-block;
@@ -972,19 +959,16 @@ a.navbar-brand {
 	transition-timing-function: ease-out;
 }
 
-.hvr-radial-out:hover::before,
-.hvr-radial-out:focus::before,
-.hvr-radial-out:active::before {
+.hvr-radial-out:hover::before, .hvr-radial-out:focus::before, .hvr-radial-out:active::before {
 	-webkit-transform: scale(2);
 	transform: scale(2);
 }
 
-a.hvr-radial-out:hover,
-a.hvr-radial-out:focus {
+a.hvr-radial-out:hover, a.hvr-radial-out:focus {
 	color: #fff;
 }
 
-/*------------------------------------------------------------------ Services -------------------------------------------------------------------*/
+/*Servicios*/
 
 .service_blog {
     float: left;
@@ -1041,8 +1025,7 @@ figure.effect-service img {
 	transition: opacity 0.35s;
 }
 
-figure figcaption,
-.grid figure figcaption>a {
+figure figcaption, .grid figure figcaption>a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1143,7 +1126,7 @@ figure.effect-service:hover {
     width: 100%;
 }
 
-/*------------------------------------------------------------------ Gallery -------------------------------------------------------------------*/
+/*Galeria*/
 
 .gallery-box {
 	padding: 70px 0px 120px;
@@ -1222,7 +1205,7 @@ figure.effect-service:hover {
 	color: #e91327;
 }
 
-/*------------------------------------------------------------------ Properties -------------------------------------------------------------------*/
+/*Propiedades*/
 
 .properties-box {
 	padding: 70px 0px;
@@ -1393,7 +1376,7 @@ figure.effect-service:hover {
 	padding-right: 10px;
 }
 
-/*------------------------------------------------------------------ counter ----------------------------------------------------------------*/
+/*counter*/
 
 h2.timer.count-title.count-number {
     color: #f43866;
@@ -1873,21 +1856,10 @@ p {
 	background: #e91327;
 }
 
-.white_fonts p,
-.white_fonts h1,
-.white_fonts h2,
-.white_fonts h3,
-.white_fonts h4,
-.white_fonts h5,
-.white_fonts h6,
-.white_fonts ul,
-.white_fonts ul li,
-.white_fonts ul li a,
-.white_fonts ul i,
-.white_fonts .post_info i,
-.white_fonts div,
-.white_fonts a.read_more {
-	color: #fff !important;
+.white_fonts p, .white_fonts h1, .white_fonts h2, .white_fonts h3, .white_fonts h4, .white_fonts h5, .white_fonts h6, 
+.white_fonts ul, .white_fonts ul li, .white_fonts ul li a, .white_fonts ul i, .white_fonts .post_info i, 
+.white_fonts div, .white_fonts a.read_more {
+	color: #2E468C !important;
 }
 
 .red_bg .about-main-info a {
@@ -2339,4 +2311,3 @@ ul.bottom_menu li {
     color: #fff;
     background: #050000;
 }
-

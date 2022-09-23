@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>Banco DEUF</title> --
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -109,27 +109,27 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/dinero.jpg);">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
-                                        <h3>Progress & Success<br><strong>Currency</strong></h3>
+                                        <h3 class="carrusel">Banco Digital<br><strong>UF</strong></h3>
                                         <br>
-                                        <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
+                                        <a class="start_exchange_bt" href="exchange.html">Servicios></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/monedas.jpg);">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="slide_text white_fonts">
-                                        <h3>Progress & Success<br><strong>Currency</strong></h3>
+                                        <h3>Banco Digital<br><strong>UF</strong></h3>
                                         <br>
-                                        <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
+                                        <a class="start_exchange_bt" href="exchange.html">Servicios></a>
                                     </div>
                                 </div>
                             </div>
