@@ -45,12 +45,7 @@ a {
 	transition: all .3s ease-in-out;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	letter-spacing: 0;
 	font-weight: normal;
 	position: relative;
@@ -87,23 +82,13 @@ h6 {
 	font-size: 13px
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	color: #212121;
 	text-decoration: none!important;
 	opacity: 1
 }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover {
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 	opacity: .8
 }
 
@@ -154,9 +139,7 @@ blockquote {
 	padding: 30px;
 }
 
-ul,
-li,
-ol {
+ul, li, ol {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
@@ -170,7 +153,6 @@ button:focus {
 	color: #ffffff;
 	opacity: 1;
 }
-
 
 /*------------------------------------------------------------------ 
    LOADER 
@@ -329,7 +311,7 @@ button:focus {
 }
 
 a:hover,a:focus {
-    color: #ff880e;
+    color: #193773;
     text-decoration: underline;
 }
 
@@ -356,7 +338,7 @@ a:hover,a:focus {
 }
 
 a.join_bt {
-    background: #ff880e;
+    background: #193773;
     width: 180px;
     text-align: center;
     height: 38px;
@@ -491,7 +473,7 @@ a.navbar-brand {
     display: block;
     right: 0;
     content: "";
-    background: #ff880e;
+    background: #193773;
     height: 60px;
     position: absolute;
     top: 0;
@@ -590,7 +572,7 @@ a.navbar-brand {
 }
 
 .theme_color {
-	color: #ff880e;
+	color: #193773;
 }
 
 .menu_orange_section {
@@ -606,7 +588,7 @@ a.navbar-brand {
     position: relative;
     content: "";
     display: block;
-    background: #ff880e;
+    background: #193773;
     left: -35px;
     transform: skew(30deg);
 
@@ -618,7 +600,7 @@ a.navbar-brand {
     float: left;
     text-align: center;
     line-height: 55px;
-    border: solid #ff880e 1px;
+    border: solid #193773 1px;
     font-size: 18px;
     margin-top: 10px;
     background: #fff;
@@ -722,7 +704,7 @@ a.navbar-brand {
 }
 
 .pogoSlider-nav-btn--selected {
-	background: #ff880e !important;
+	background: #193773 !important;
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
@@ -978,7 +960,7 @@ a.navbar-brand {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #d66c0b;
+	background: #193773;
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	transform: scale(0);
@@ -1001,7 +983,6 @@ a.hvr-radial-out:hover,
 a.hvr-radial-out:focus {
 	color: #fff;
 }
-
 
 /*------------------------------------------------------------------ Services -------------------------------------------------------------------*/
 
@@ -1162,7 +1143,6 @@ figure.effect-service:hover {
     width: 100%;
 }
 
-
 /*------------------------------------------------------------------ Gallery -------------------------------------------------------------------*/
 
 .gallery-box {
@@ -1241,7 +1221,6 @@ figure.effect-service:hover {
 	background: #fff;
 	color: #e91327;
 }
-
 
 /*------------------------------------------------------------------ Properties -------------------------------------------------------------------*/
 
@@ -1774,7 +1753,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .menu_footer li a:hover,
 .menu_footer li a:focus {
-	color: #d66c0b !important;
+	color: #193773 !important;
 }
 
 .menu_footer li {
@@ -1797,7 +1776,7 @@ select.form-control:not([size]):not([multiple]) {
 
 footer.footer-box h3 {
     font-size: 30px;
-    border-bottom: solid #d66c0b 4px;
+    border-bottom: solid #193773 4px;
     margin-bottom: 15px;
 }
 
@@ -1807,13 +1786,9 @@ footer.footer-box h3 {
 
 footer.footer-box h3 {
     font-size: 30px;
-    border-bottom: solid #d66c0b 4px;
+    border-bottom: solid #193773 4px;
     margin-bottom: 25px;
 }
-
-
-
-
 
 /*------------------------------------------------------------------ Subscribe -------------------------------------------------------------------*/
 
@@ -1964,7 +1939,7 @@ p {
 .heading_main h2::after {
     width: 250px;
     height: 8px;
-    background: #ff880e;
+    background: #193773;
     content: "";
     display: block;
     transform: skew(-30deg);
@@ -2164,7 +2139,7 @@ ul.social_icon li {
 }
 
 .newsletter_form button {
-    background: #d66c0b;
+    background: #193773;
     color: #fff;
     border: none;
     font-size: 14px;
@@ -2211,7 +2186,7 @@ ul.social_icon li {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #ff880e;
+    background: #193773;
     padding: 15px 0 5px;
     text-align: center;
     transition: ease all 0.25s;

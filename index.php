@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                        <a class="navbar-brand" href="index.html"><img src="images/logoN.png" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
@@ -71,7 +71,7 @@
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
-                <div class="menu_orange_section" style="background: #ff880e;">
+                <div class="menu_orange_section" style="background: #193773;">
                    <nav class="navbar header-nav navbar-expand-lg"> 
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,11 +82,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="about.html">Acerca De</a></li>
                         <li><a class="nav-link" href="exchange.html">Exchange</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="new.html">News</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="services.html">Servicios</a></li>
+                        <li><a class="nav-link" href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
                      </div>
