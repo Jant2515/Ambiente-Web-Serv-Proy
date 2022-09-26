@@ -45,13 +45,13 @@
             <img src="images/loader.gif" alt="#" />
         </div>
     </div>
-    <!-- end loader -->
     <!-- END LOADER -->
 
-    <!-- Start header -->
+    <!-- Inicio del Header y Navbar -->
     <header class="top-header">
         <div class="header_top">
             
+            <!-- Header -->
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
@@ -79,10 +79,12 @@
                     <span></span>
                     <span></span>
                 </button>
+
+                <!-- Navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.html">Home</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="about.html">Acerca De</a></li>
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.html">Inicio</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="about.html">Acerca de</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="exchange.html">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="services.html">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="contact.html">Contacto</a></li>
@@ -91,7 +93,7 @@
                      </div>
                  </nav>
                  <div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
+                    <input type="text" class="search-txt" placeholder="Buscar">
                     <a class="search-btn">
                         <img src="images/search_icon.png" alt="#" />
                     </a>
@@ -102,9 +104,9 @@
         </div>
         
     </header>
-    <!-- End header -->
+    <!-- Fin del header -->
 
-    <!-- Start Banner -->
+    <!-- Inicio del Banner/Carrusel -->
     <div class="ulockd-home-slider">
         <div class="container-fluid">
             <div class="row">
@@ -140,42 +142,43 @@
             </div>
         </div>
     </div>
-    <!-- End Banner -->
+    <!-- Fin del Banner/Carrusel -->
     
-	<!-- section -->
+	<!-- Cuerpo de la pagina/Seccion 1 -->
     <div class="section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="full text_align_right_img">
-                        <img src="images/img1.png" alt="#" />
+                        <img src="images/bancofoto.jpg" alt="#" />
                     </div>
                 </div>
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>	
+						   <h2><span class="theme_color">Bienvenidos</span> al Banco Digital UF</h2>	
                         </div>
                     </div>
                     <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>El Banco Digital UF es un banco destinado especialmente para estudiantes de la Universidad Fidélitas, los cuales van a poder realizar transacciones, pagos, entre otro tipo de servicios los cuales vayan ligados a la misma universidad.</p>
                     </div>
                     <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">About more ></a>
+                        <a class="main_bt" href="#">Leer más></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-	<!-- end section -->
-    <!-- section -->
+	<!-- Fin del Cuerpo de la pagina/Seccion 1 -->
+
+    <!-- Cuerpo de la pagina/Seccion 2 -->
     <div class="section layout_padding">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Services</h2>    
+                           <h2><span class="theme_color"></span>Servicios</h2>    
                         </div>
                     </div>
                 </div>
@@ -184,25 +187,25 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
                        <img class="img-responsive" src="images/s1.png" alt="#" />
-                       <h4>Safe & Secure</h4>
+                       <h4>Seguridad</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
                         <img class="img-responsive" src="images/s2.png" alt="#" />
-                        <h4>Mobile Apps</h4>
+                        <h4>Aplicación móvil</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
                         <img class="img-responsive" src="images/s3.png" alt="#" />
-                        <h4>Wallet</h4>
+                        <h4>Cuenta</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
                         <img class="img-responsive" src="images/s4.png" alt="#" />
-                        <h4>Experts Support</h4>
+                        <h4>Soporte</h4>
                     </div>
                 </div>
             </div>
@@ -210,22 +213,23 @@
                 <div class="col-sm-12">
                     <div class="full">
                         <div class="center">
-                            <a class="main_bt" href="#">About more ></a>
+                            <a class="main_bt" href="#">Más Servicios ></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end section -->
-	<!-- section -->
+    <!-- Fin Cuerpo de la pagina/Seccion 2 -->
+
+	<!-- Cuerpo de la pagina/Seccion 3 -->
     <div class="section layout_padding padding_top_0">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>News</h2>    
+                           <h2><span class="theme_color"></span>Noticias</h2>    
                         </div>
                     </div>
                 </div>
@@ -233,39 +237,40 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
-                       <img class="img-responsive" src="images/b1.png" alt="#" />
-                       <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                       <img class="img-responsive" src="images/euro-vs-dolar.jpg" alt="#" />
+                       <div class="overlay"><a class="main_bt transparent" href="#">Ver Más</a></div>
                        <div class="blog_details">
-                         <h3>Bitcoin News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <h3>Caída del Euro</h3>
+                         <p>El precio del Euro esta incluso pode debajo del dolar, lo cual es alarmante en el continente europeo.</p>
                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
-                        <img class="img-responsive" src="images/b2.png" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                        <img class="img-responsive" src="images/estafa.jpg" alt="#" />
+                        <div class="overlay"><a class="main_bt transparent" href="#">Ver Más</a></div>
                        <div class="blog_details">
-                         <h3>Ethereum News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <h3>Estafas con criptomonedas</h3>
+                         <p>Se han creado nuevos tipos de estafas con las criptomonedas que pueden dejarte los bolsillos vacios.</p>
                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="full news_blog">
-                        <img class="img-responsive" src="images/b3.png" alt="#" />
-                        <div class="overlay"><a class="main_bt transparent" href="#">View</a></div>
+                        <img class="img-responsive" src="images/inflacion.jpg" alt="#" />
+                        <div class="overlay"><a class="main_bt transparent" href="#">Ver Más</a></div>
                        <div class="blog_details">
-                         <h3>Light News</h3>
-                         <p>pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                         <h3>Inflación y sus afectaciones</h3>
+                         <p>La inflación hace que el colón suba afectando a todos los costarricenses.</p>
                        </div>
                     </div>
                 </div>
              </div>
         </div>
     </div>
-    <!-- end section -->
-    <!-- Start Footer -->
+    <!-- Fin de Cuerpo de la pagina/Seccion 3 -->
+
+    <!-- Inicio Footer -->
     <footer class="footer-box">
         <div class="container">
             <div class="row">
@@ -273,7 +278,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="full">
-                                <img class="img-responsive" src="images/footer_logo.png" alt="#" />
+                                <img class="img-responsive" src="images/logoN.png" alt="#" />
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
@@ -322,7 +327,7 @@
 			 </div>
         </div>
     </footer>
-    <!-- End Footer -->
+    <!-- Fin del Footer -->
 
     <div class="footer_bottom">
         <div class="container">
