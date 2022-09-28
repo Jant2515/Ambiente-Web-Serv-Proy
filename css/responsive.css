@@ -171,14 +171,12 @@ padding: 7px 15px;
 }
 
 .menu_orange_section::after {
-    top: 100px;
-    left: 30px;
     width: 70px;
     height: 66px;
     position: relative;
     content: "";
     display: block;
-    background: #193773;
+    background: #ff880e;
     left: -50px;
     transform: skew(30deg);
     display: none;
@@ -293,9 +291,8 @@ padding: 7px 15px;
         text-align: center;
     }
     .navbar-brand{
-         margin-left: 8px;
-         margin-right: 8px;
-         
+         margin-left: 10px;
+         margin-right: 10px;
     }
      .top-header .navbar .navbar-collapse ul li a{
          padding: 5px 15px;
