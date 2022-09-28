@@ -630,8 +630,8 @@ pre code {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px
+    margin-right: -50px;
+    margin-left: -50px
 }
 
 .no-gutters {
@@ -4350,7 +4350,7 @@ input[type=submit].btn-block {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
 }
 
 .navbar-nav .nav-link {
@@ -4424,7 +4424,7 @@ input[type=submit].btn-block {
     }
 
     .navbar-expand-sm .navbar-nav {
-        -ms-flex-direction: row;
+        -ms-flex-direction: row ;
         flex-direction: row
     }
 
