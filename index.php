@@ -186,25 +186,25 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
-                       <img class="img-responsive" src="images/s1.png" alt="#" />
+                       <img class="img-responsive" src="images/seguridad1.jpg" alt="#" />
                        <h4>Seguridad</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
-                        <img class="img-responsive" src="images/s2.png" alt="#" />
+                        <img class="img-responsive" src="images/appmovil.jpg" alt="#" />
                         <h4>Aplicación móvil</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
-                        <img class="img-responsive" src="images/s3.png" alt="#" />
+                        <img class="img-responsive" src="images/cuenta.jpg" alt="#" />
                         <h4>Cuenta</h4>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="full services_blog">
-                        <img class="img-responsive" src="images/s4.png" alt="#" />
+                        <img class="img-responsive" src="images/soporte.png" alt="#" />
                         <h4>Soporte</h4>
                     </div>
                 </div>
