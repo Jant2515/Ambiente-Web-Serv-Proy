@@ -34,7 +34,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="https://kit.fontawesome.com/a77e026872.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
@@ -271,60 +271,45 @@
     <!-- Fin de Cuerpo de la pagina/Seccion 3 -->
 
     <!-- Inicio Footer -->
-    <footer class="footer-box">
-        <div class="container">
-            <div class="row">
-               <div class="col-md-12 white_fonts">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <img class="img-responsive" src="images/logoN.png" alt="#" />
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <h3>Quick Links</h3>
-                            </div>
-                            <div class="full">
-                                <ul class="menu_footer">
-                                    <li><a href="home.html">> Home</a></li>
-                                    <li><a href="about.html">> About</a></li>
-                                    <li><a href="exchange.html">> Exchange</a></li>
-                                    <li><a href="services.html">> Services</a></li>
-                                    <li><a href="new.html">> New</a></li>
-                                    <li><a href="contact.html">> Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Newsletter</h3>
-                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                             <div class="newsletter_form">
-                                <form action="index.html">
-                                   <input type="email" placeholder="Your Email" name="#" required="">
-                                   <button>Submit</button>
-                                </form>
-                             </div>
-                         </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="full">
-                                <div class="footer_blog full white_fonts">
-                             <h3>Contact us</h3>
-                             <ul class="full">
-                               <li><img src="images/i5.png"><span>London 145<br>United Kingdom</span></li>
-                               <li><img src="images/i6.png"><span>demo@gmail.com</span></li>
-                               <li><img src="images/i7.png"><span>+12586954775</span></li>
-                             </ul>
-                         </div>
-                            </div>
-                        </div>
-					</div>
+    <footer>
+        <div class= "container__footer">
+            <div class="box__footer">
+                <div class="logo"
+                    <img src="" alt="">
                 </div>
-			 </div>
+                <div class="terms">
+                    <p>El Banco es una entidad bancaria estatal de índole comercial que
+                         opera en Costa Rica. Con un patrimonio de ¢253,574,654,782
+                         y activos por ¢5,278,383,864,857, el banco se ha constituido como una de las más 
+                         sólidas empresas bancarias de Costa Rica y de la región centroamericana.​</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Servicios Adicionales</h2>
+                <a href="#">Desarrollo</a>
+                <a href="#">Marketing</a>
+                <a href="#">IOS</a>
+                <a href="#">Android</a>
+            </div>
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>
+            </div>
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados @ 2022
+            <b>Ambiente web C//S</b></p>
         </div>
     </footer>
     <!-- Fin del Footer -->
