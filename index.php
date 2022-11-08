@@ -55,13 +55,13 @@
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                    <a class="navbar-brand" href="index.html"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
                             <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
                             <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
-                            <li><a class="join_bt" href="#">Ingresar</a></li>
+                            <li><a class="join_bt" href="">Ingresar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                         <li><a class="nav-link active" style="color:#B8BCBF" href="index.html">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="about.html">Acerca de</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="exchange.html">Cambios</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="services.html">Servicios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="servicios.php">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -156,7 +156,7 @@
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Bienvenidos</span> al Banco Digital UF</h2>	
+						   <h2><span class="theme_color">Bienvenidos al Banco Digital UF</span></h2>	
                         </div>
                     </div>
                     <div class="full paddding_left_15">
@@ -309,20 +309,10 @@
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados @ 2022
-            <b>Ambiente web C//S</b></p>
+            <b>Ambiente web C//S</p>
         </div>
     </footer>
     <!-- Fin del Footer -->
-
-    <div class="footer_bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="crp">© Copyrights 2019 design by html.design</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
 
