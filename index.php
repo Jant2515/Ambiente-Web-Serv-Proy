@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <!-- Basic -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +36,8 @@
 </head>
 
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+<form role="form" action="" method="post">
+    
 
     <!-- LOADER -->
     <div id="preloader">
@@ -61,7 +61,7 @@
                         <ul>
                             <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
                             <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
-                            <li><a class="join_bt" href="">Ingresar</a></li>
+                            <input type="submit" value="Ingresar" id="btnIngresar" name="btnIngresar" class="btn  btn-primary">
                         </ul>
                     </div>
                 </div>
@@ -79,8 +79,11 @@
                     <span></span>
                     <span></span>
                 </button>
-
                 <!-- Navbar -->
+ 
+                <!-- Aca pone opciones de ValidarOpcionesMenu de controller -->
+                </form>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" style="color:#B8BCBF" href="index.html">Inicio</a></li>
@@ -105,7 +108,7 @@
         
     </header>
     <!-- Fin del header -->
-
+    
     <!-- Inicio del Banner/Carrusel -->
     <div class="ulockd-home-slider">
         <div class="container-fluid">
@@ -432,6 +435,7 @@ jQuery(function ($) {
   }
 });
 	</script>
+    
 </body>
 
 </html>
