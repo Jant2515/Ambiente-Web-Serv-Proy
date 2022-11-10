@@ -87,99 +87,110 @@
         </div>
     </header>
     <!-- Fin del header -->
-    <div class="bodyServices">
-        <div class="containergg">
-            <div class="caja">
-                <div class="icon">01</div>
-                <div class="content">
-                    <h3>Depositos</h3>
-                    <p class="p">Realizar depositos</p>
-                    <br>
-                    <a class="btn btn-primary" href="prueba.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+    
+    <form role="form" action="" method="post">
+    <br/><br/>
+    <div class="templatemo-content-wrapper">
+        <div class="templatemo-content">
+
+            <div class="templatemo-panels">
+                <br/><br/>
+                <div class="col-md-12">
+
+                    <div class="row form-group">
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Cédula</label>
+                            <input type="text" class="form-control" id="txtCedula" name="txtCedula">
+                        </div>
+
+                        <div class="col-md-4 margin-bottom-15">
+                            <label class="control-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Correo Electronico</label>
+                            <input type="text" class="form-control" id="txtCorreo" name="txtCorreo">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="caja">
-                <div class="icon">02</div>
-                <div class="content">
-                    <h3>Tranferencia</h3>
-                    <p class="p">Realizar tranferencia</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                <div class="col-md-12">
+
+                    <div class="row form-group">
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Tipo de Cuenta</label>
+                            <input type="text" class="form-control" id="txtCedula" name="txtCedula">
+                        </div>
+
+                        <div class="col-md-4 margin-bottom-15">
+                            <label class="control-label">Edad</label>
+                            <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Telefono</label>
+                            <input type="text" class="form-control" id="txtCorreo" name="txtCorreo">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="caja">
-                <div class="icon">03</div>
-                <div class="content">
-                    <h3>Retiro</h3>
-                    <p class="p">Realizar retiro</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
+                <div class="col-md-12">
+
+                    <div class="row form-group">
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Tipo Usuario</label>
+                            <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
+                                <?php 
+                                /*ListarTiposUsuario($datos["tipoUsuario"]); */
+                                ?>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 margin-bottom-15">
+                            <label class="control-label">Contraseña</label>
+                            <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna" >
+                        </div>
+
+                        <div class="col-md-2 margin-bottom-15">
+                            <label class="control-label">Confirme Contraseña</label>
+                            <input type="password" class="form-control" id="txtConfirmarContrasenna" name="txtConfirmarContrasenna">
+                        </div>
+       
+                        <div class="col-md-2 margin-bottom-15">
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="col-md-12">
+                    <div class="col-md-8 margin-bottom-15">
+                    </div>
+                    <div class="col-md-2 margin-bottom-15">
+                        <input type="submit" value="Guardar" class="btn btn-primary" id="btnGuardar" name="btnGuardar">
+                        <input type="submit" value="Cancelar" class="btn btn-secondary" id="btnCancelar" name="btnCancelar">
+                    </div>
+                    <div class="col-md-1 margin-bottom-15">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <div class="bodyServices">
-        <div class="containergg">
-            <div class="caja">
-                <div class="icon">04</div>
-                <div class="content">
-                    <h3>Crear Cuenta</h3>
-                    <p class="p">Crear una Nueva Cuenta</p>
-                    <br>
-                    <a class="btn btn-primary" href="agregarUsuario.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
-                </div>
-            </div>
-            <div class="caja">
-                <div class="icon">05</div>
-                <div class="content">
-                    <h3>Cita</h3>
-                    <p class="p">Adquirir Cita en Oficinas</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
-                </div>
-            </div>
-            <div class="caja">
-                <div class="icon">06</div>
-                <div class="content">
-                    <h3>Cambio de Divisas</h3>
-                    <p class="p">Realizar Cambio de Divisas</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bodyServices">
-        <div class="containergg">
-            <div class="caja">
-                <div class="icon">07</div>
-                <div class="content">
-                    <h3>Editar Cuenta</h3>
-                    <p class="p">Editar Informacion</p>
-                    <br>
-                    <a class="btn btn-primary" href="editarUsuario.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
-                </div>
-            </div>
-            <div class="caja">
-                <div class="icon">08</div>
-                <div class="content">
-                    <h3>X</h3>
-                    <p class="p">X</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
-                </div>
-            </div>
-            <div class="caja">
-                <div class="icon">09</div>
-                <div class="content">
-                    <h3>X</h3>
-                    <p class="p">X</p>
-                    <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <br/><br/>
+    </form>
     <!-- Inicio Footer -->
     <footer>
         <div class="container__footer">

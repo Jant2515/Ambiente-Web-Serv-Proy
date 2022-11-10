@@ -1236,7 +1236,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	/*min-height: 10vh;*/
 }
 .containergg{
     display: flex;
@@ -1283,25 +1283,25 @@ pointer-events: none;
     transition: 1s;
 }
 .containergg .caja:nth-child(1) .icon{
-    box-shadow: 0 0 0 0 #6883A6;
-    background: #6883A6;
+    box-shadow: 0 0 0 0 #B8BCBF;
+    background: #B8BCBF;
 }
 .containergg .caja:nth-child(1):hover .icon{
-    box-shadow: 0 0 0 400px #6883A6;
+    box-shadow: 0 0 0 400px #B8BCBF;
 }
 .containergg .caja:nth-child(2) .icon{
-    box-shadow: 0 0 0 0 #6883A6;
-    background: #6883A6;
+    box-shadow: 0 0 0 0 #B8BCBF;
+    background: #B8BCBF;
 }
 .containergg .caja:nth-child(2):hover .icon{
-    box-shadow: 0 0 0 400px #6883A6;
+    box-shadow: 0 0 0 400px #B8BCBF;
 }
 .containergg .caja:nth-child(3) .icon{
-    box-shadow: 0 0 0 0 #6883A6;
-    background: #6883A6;
+    box-shadow: 0 0 0 0 #B8BCBF;
+    background: #B8BCBF;
 }
 .containergg .caja:nth-child(3):hover .icon{
-    box-shadow: 0 0 0 400px #6883A6;
+    box-shadow: 0 0 0 400px #B8BCBF;
 }
 .containergg .caja .content{
     position: relative;
@@ -1319,6 +1319,7 @@ pointer-events: none;
 .containergg .caja .content p{
     margin: 0;
     padding: 0;
+	color: #000;
 }
 /*--------------------------------------------------- Nuevo Footer ----------------------------------------------------*/
 footer{
