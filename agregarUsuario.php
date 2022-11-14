@@ -1,5 +1,9 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include_once __DIR__ . '\generales.php';
+include_once __DIR__ . '\Controller\UsuarioController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -107,8 +111,8 @@ include_once __DIR__ . '\generales.php';
                         <div class="col-md-8 margin-bottom-15">
                         </div>
                         <div class="col-md-2 margin-bottom-15">
-                            <input type="submit" value="Guardar" class="btn btn-primary" id="btnGuardar" name="btnGuardar">
-                            <input type="submit" value="Cancelar" class="btn btn-secondary" id="btnCancelar" name="btnCancelar">
+                        <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar" name="btnGuardar" autocomplete="off" required>
+                            <a href="index.php" class="btn btn-info">Cancelar</a>
                         </div>
                         <div class="col-md-1 margin-bottom-15">
                         </div>

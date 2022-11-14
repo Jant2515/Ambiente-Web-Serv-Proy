@@ -106,7 +106,7 @@ if(isset($_POST["btnActualizar"]))
     $Id = $_POST["txtId"];
 
     ActualizarUsuarioModel($Nombre, $Contrasenna, $Correo, $TipoUsuario, $Id);  
-    header("Location: MantUsuario.php");  
+    header("Location: index.php");  
 }
 
 
@@ -121,7 +121,7 @@ if(isset($_POST["btnGuardar"]))
     $TipoUsuario = $_POST["cboTipoUsuario"];
 
     GuardarUsuarioModel($Nombre,$cedula, $Contrasenna, $Correo, $TipoUsuario);  
-    header("Location: MantUsuario.php");  
+    header("Location: index.php");  
 }
 
 
