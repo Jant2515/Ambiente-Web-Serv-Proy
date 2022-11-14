@@ -55,7 +55,7 @@ function ListarTiposUsuarioModel()
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call ListarTiposUsuario();";
+    $procedimiento = "call ListarTiposUsuaurio();";
     $datos = $enlace -> query($procedimiento);
 
     CloseDB($enlace);
@@ -74,11 +74,11 @@ function ActualizarUsuarioModel($Nombre,$Contrasenna,$Correo,$TipoUsuario,$Id)
 }
 
 //Para guardar un usuario nuevo 
-function GuardarUsuarioModel($Nombre,$cedula,$Contrasenna,$Correo,$TipoUsuario)
+function GuardarUsuarioModel($Nombre,$cedula,$Contrasenna,$Correo,$TipoUsuario, $Celular, $Direccion)
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call GuardarUsuario('$Nombre','$cedula','$Contrasenna','$Correo',$TipoUsuario);";
+    $procedimiento = "call GuardarUsuario('$Nombre','$cedula','$Contrasenna','$Correo',$TipoUsuario, '$Celular', '$Direccion');";
     $enlace -> query($procedimiento);
 
     CloseDB($enlace);

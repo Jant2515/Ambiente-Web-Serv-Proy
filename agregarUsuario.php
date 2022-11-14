@@ -59,18 +59,22 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
-                                <label class="control-label">Tipo de Cuenta</label>
-                                <input type="text" class="form-control" id="txtCedula" name="txtCedula">
+                                <label class="control-label">Tipo Usuario</label>
+                                <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
+                                    <?php
+                                    ListarTiposUsuario($datos["idTipoUsuario"]);
+                                    ?>
+                                </select>
                             </div>
 
                             <div class="col-md-4 margin-bottom-15">
-                                <label class="control-label">Edad</label>
-                                <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+                                <label class="control-label">Dirrecion Fisica</label>
+                                <input type="text" class="form-control" id="txtDireccion" name="txtDireccion">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
                                 <label class="control-label">Telefono</label>
-                                <input type="text" class="form-control" id="txtCorreo" name="txtCorreo">
+                                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -83,21 +87,12 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
                             <div class="col-md-2 margin-bottom-15">
                             </div>
 
-                            <div class="col-md-2 margin-bottom-15">
-                                <label class="control-label">Tipo Usuario</label>
-                                <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
-                                    <?php
-                                    /*ListarTiposUsuario($datos["tipoUsuario"]); */
-                                    ?>
-                                </select>
-                            </div>
-
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Contraseña</label>
                                 <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna">
                             </div>
 
-                            <div class="col-md-2 margin-bottom-15">
+                            <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Confirme Contraseña</label>
                                 <input type="password" class="form-control" id="txtConfirmarContrasenna" name="txtConfirmarContrasenna">
                             </div>

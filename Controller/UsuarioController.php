@@ -84,10 +84,10 @@ function ListarTiposUsuario($tipo)
         echo '<option selected value=""> Selecccione </option>';
         while($fila = mysqli_fetch_array($datos))
         {  
-            if($tipo == $fila["tipoUsuario"])
-                echo '<option selected value="' . $fila["tipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
+            if($tipo == $fila["idTipoUsuario"])
+                echo '<option selected value="' . $fila["idTipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
             else
-                echo '<option value="' . $fila["tipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
+                echo '<option value="' . $fila["idTipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
         }
     }
 }
@@ -113,8 +113,10 @@ if(isset($_POST["btnGuardar"]))
     $Contrasenna = $_POST["txtContrasenna"];
     $Correo = $_POST["txtCorreo"];
     $TipoUsuario = $_POST["cboTipoUsuario"];
+    $Celular = $_POST["txtTelefono"];
+    $Direccion = $_POST["txtDireccion"];
 
-    GuardarUsuarioModel($Nombre,$cedula, $Contrasenna, $Correo, $TipoUsuario);  
+    GuardarUsuarioModel($Nombre, $cedula, $Contrasenna, $Correo, $TipoUsuario, $Celular, $Direccion);  
     header("Location: index.php");  
 }
 ?>
