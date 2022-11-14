@@ -55,8 +55,8 @@ function links()
                     </div>
                     <div class="site_information">
                         <ul>
-                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
-                            <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
+                            <li><a href="mailto:BancoFide@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
+                            <li><a href="tel:+506-888-banco"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
                             <li><a class="join_bt" href="">Ingresar</a></li>
                         </ul>
                     </div>
@@ -79,11 +79,11 @@ function links()
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.html">Inicio</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="about.html">Acerca de</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="exchange.html">Cambios</a></li>
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="acercaDe.php">Acerca de</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="servicios.php">Servicios</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="contact.html">Contacto</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
                     </ul>
                 </div>
                      </div>

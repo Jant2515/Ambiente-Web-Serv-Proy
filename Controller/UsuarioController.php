@@ -47,7 +47,6 @@ function ListarUsuarios()
     }
 }
 
-
 //Dependiendo del roll asi se le mostrara el menu
 function ValidarOpcionesMenu()
 {
@@ -65,7 +64,6 @@ function ValidarOpcionesMenu()
             echo '<li><a href="' . $fila["redireccion"] . '"><i class="' . $fila["icono"] . '"></i>' . $fila["texto"] . '</a></li>';
         }
     }
-
     echo '<li><a href="" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>Cerrar Sesión</a></li>
           </ul>
           </div>';
@@ -81,11 +79,9 @@ function ConsultarDatosUsuario($id)
 function ListarTiposUsuario($tipo)
 {
     $datos = ListarTiposUsuarioModel();   
-
     if($datos -> num_rows > 0)
     { 
         echo '<option selected value=""> Selecccione </option>';
-        
         while($fila = mysqli_fetch_array($datos))
         {  
             if($tipo == $fila["tipoUsuario"])
@@ -109,9 +105,7 @@ if(isset($_POST["btnActualizar"]))
     header("Location: index.php");  
 }
 
-
 //El guardar en BD
-
 if(isset($_POST["btnGuardar"]))
 {   
     $Nombre = $_POST["txtNombre"];
@@ -123,6 +117,4 @@ if(isset($_POST["btnGuardar"]))
     GuardarUsuarioModel($Nombre,$cedula, $Contrasenna, $Correo, $TipoUsuario);  
     header("Location: index.php");  
 }
-
-
 ?>

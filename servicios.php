@@ -72,7 +72,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Cambio de Divisas</h3>
                     <p class="p">Realizar Cambio de Divisas</p>
                     <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="cambioDivisas.php" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
                 </div>
             </div>
         </div>
