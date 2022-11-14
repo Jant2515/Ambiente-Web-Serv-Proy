@@ -9,16 +9,16 @@ include_once __DIR__ . '\generales.php';
     ?>
 </head>
 <body>
-<?php
-    navBar();
+    <?php
+        navBar();
     ?>
     <footer>
     <?php
-    fooTer();
+        fooTer();
     ?>
     </footer>
     <?php
-    alllinks();
+        alllinks();
     ?>
 </body>
 </html>
