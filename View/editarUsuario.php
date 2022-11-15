@@ -1,6 +1,6 @@
 <?php
 include_once __DIR__ . '/generales.php';
-include_once __DIR__ . '\UsuarioController.php';
+include_once __DIR__ . '/UsuarioController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@ include_once __DIR__ . '\UsuarioController.php';
                                 <label class="control-label">Tipo Usuario</label>
                                 <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
                                     <?php
-                                    //ListarTiposUsuario($datos["idTipoUsuario"]);
+                                    ListarTiposUsuario($datos["idTipoUsuario"]);
                                     ?>
                                 </select>
                             </div>

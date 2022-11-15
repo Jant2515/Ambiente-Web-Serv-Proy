@@ -26,6 +26,17 @@ function ListarUsuariosModel()
     return $datos;
 }
 
+function ListarTiposCuentaModel()
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call ListarTiposCuenta();";
+    $datos = $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+    return $datos;
+}
+
 //Depende del roll asi poder ingresar
 function ValidarOpcionesMenuModel($tipoUsuario)
 {
@@ -55,7 +66,7 @@ function ListarTiposUsuarioModel()
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call ListarTiposUsuaurio();";
+    $procedimiento = "call ListarTiposUsuario();";
     $datos = $enlace -> query($procedimiento);
 
     CloseDB($enlace);
@@ -74,15 +85,14 @@ function ActualizarUsuarioModel($Nombre,$Contrasenna,$Correo,$TipoUsuario,$Id)
 }
 
 //Para guardar un usuario nuevo 
-function GuardarUsuarioModel($Nombre,$cedula,$Contrasenna,$Correo,$TipoUsuario, $Celular, $Direccion)
+function GuardarUsuarioModel($cedula,$Nombre,$Contrasenna,$Correo,$Celular,$TipoUsuario,$TipoCuenta)
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call GuardarUsuario('$Nombre','$cedula','$Contrasenna','$Correo',$TipoUsuario, '$Celular', '$Direccion');";
+    $procedimiento = "call GuardarUsuario('$cedula','$Nombre','$Contrasenna','$Correo','$Celular',$TipoUsuario,'$TipoCuenta');";
     $enlace -> query($procedimiento);
 
     CloseDB($enlace);
 }
-
 
 ?>

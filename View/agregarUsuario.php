@@ -16,8 +16,8 @@ include_once __DIR__ . '\UsuarioController.php';
 </head>
 
 <body>
-<form role="form" action="" method="post">
-    <?php
+    <form role="form" action="" method="post">
+        <?php
     navBar();
     ?>
         <br /><br />
@@ -61,7 +61,7 @@ include_once __DIR__ . '\UsuarioController.php';
                                 <label class="control-label">Tipo Usuario</label>
                                 <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
                                     <?php
-                                    //ListarTiposUsuario($datos["idTipoUsuario"]);
+                                    ListarTiposUsuario($datos["idTipoUsuario"]);
                                     ?>
                                 </select>
                             </div>
@@ -86,14 +86,24 @@ include_once __DIR__ . '\UsuarioController.php';
                             <div class="col-md-2 margin-bottom-15">
                             </div>
 
+                            <div class="col-md-2 margin-bottom-15">
+                                <label class="control-label">Tipo Cuenta</label>
+                                <select class="form-control" id="cboTipoCuenta" name="cboTipoCuenta">
+                                    <?php
+                                    ListarTiposCuenta($datos["idTipoCuenta"]);
+                                    ?>
+                                </select>
+                            </div>
+
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Contraseña</label>
                                 <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna">
                             </div>
 
-                            <div class="col-md-4 margin-bottom-15">
+                            <div class="col-md-2 margin-bottom-15">
                                 <label class="control-label">Confirme Contraseña</label>
-                                <input type="password" class="form-control" id="txtConfirmarContrasenna" name="txtConfirmarContrasenna">
+                                <input type="password" class="form-control" id="txtConfirmarContrasenna"
+                                    name="txtConfirmarContrasenna">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -105,8 +115,9 @@ include_once __DIR__ . '\UsuarioController.php';
                         <div class="col-md-8 margin-bottom-15">
                         </div>
                         <div class="col-md-2 margin-bottom-15">
-                        <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar" name="btnGuardar" autocomplete="off" required>
-                            <a href="index.php" class="btn btn-info">Cancelar</a>
+                            <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar"
+                                name="btnGuardar" autocomplete="off" required>
+                            <a href="../index.php" class="btn btn-info">Cancelar</a>
                         </div>
                         <div class="col-md-1 margin-bottom-15">
                         </div>

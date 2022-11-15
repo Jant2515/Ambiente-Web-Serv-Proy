@@ -92,6 +92,22 @@ function ListarTiposUsuario($tipo)
     }
 }
 
+function ListarTiposCuenta($tipo)
+{
+    $datos = ListarTiposCuentaModel();   
+    if($datos -> num_rows > 0)
+    { 
+        echo '<option selected value=""> Selecccione </option>';
+        while($fila = mysqli_fetch_array($datos))
+        {  
+            if($tipo == $fila["idTipoCuenta"])
+                echo '<option selected value="' . $fila["idTipoCuenta"] . '">' . $fila["tipoCuenta"] . '</option>';
+            else
+                echo '<option value="' . $fila["idTipoCuenta"] . '">' . $fila["tipoCuenta"] . '</option>';
+        }
+    }
+}
+
 //El boton de actualizar (Guardar en el editar)
 if(isset($_POST["btnActualizar"]))
 {
@@ -114,9 +130,9 @@ if(isset($_POST["btnGuardar"]))
     $Correo = $_POST["txtCorreo"];
     $TipoUsuario = $_POST["cboTipoUsuario"];
     $Celular = $_POST["txtTelefono"];
-    $Direccion = $_POST["txtDireccion"];
+    $TipoCuenta = $_POST["cboTipoCuenta"];
 
-    GuardarUsuarioModel($Nombre, $cedula, $Contrasenna, $Correo, $TipoUsuario, $Celular, $Direccion);  
-    header("Location: index.php");  
+    GuardarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo, $Celular, $TipoUsuario, $TipoCuenta);  
+    header("Location: ../index.php");  
 }
 ?>
