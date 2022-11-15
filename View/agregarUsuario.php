@@ -3,7 +3,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 include_once __DIR__ . '\generales.php';
-include_once __DIR__ . '\Controller\UsuarioController.php';
+//include_once __DIR__ . '\Controller\UsuarioController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +16,10 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
 </head>
 
 <body>
+<form role="form" action="" method="post">
     <?php
     navBar();
     ?>
-
-    <form role="form" action="" method="post">
         <br /><br />
         <div class="templatemo-content-wrapper">
             <div class="templatemo-content">
@@ -62,7 +61,7 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
                                 <label class="control-label">Tipo Usuario</label>
                                 <select class="form-control" id="cboTipoUsuario" name="cboTipoUsuario">
                                     <?php
-                                    ListarTiposUsuario($datos["idTipoUsuario"]);
+                                    //ListarTiposUsuario($datos["idTipoUsuario"]);
                                     ?>
                                 </select>
                             </div>
