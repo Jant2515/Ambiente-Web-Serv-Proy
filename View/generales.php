@@ -175,12 +175,12 @@ function navBarIndex()
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                    <a class="navbar-brand" href="index.php"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
+                    <a class="navbar-brand" href="index.php"><img src="View/images/logoN.png" width="200" height="70" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
-                            <li><a href="mailto:BancoFide@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
-                            <li><a href="tel:+506-888-banco"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
+                            <li><a href="mailto:BancoFide@gmail.com"><img src="View/images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
+                            <li><a href="tel:+506-888-banco"><img src="View/images/phone_icon.png" alt="#" />+506-888-banco</a></li>
                             <li><a class="join_bt" href="">Ingresar</a></li>
                         </ul>
                     </div>
@@ -232,4 +232,35 @@ function allLinksIndex()
   <script src="View/js/jquery.min.js"></script>
   <!-- ALL PLUGINS -->
   <script src="View/js/custom.js"></script>';
+}
+
+function linksIndex()
+{
+    echo '<title>Banco DEUF</title>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <!-- Mobile Metas -->
+          <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          <!-- Site Metas -->
+          <meta name="keywords" content="">
+          <meta name="description" content="">
+          <meta name="author" content="">
+          <!-- Site Icons -->
+          <link rel="shortcut icon" href="#" type="image/x-icon" />
+          <link rel="apple-touch-icon" href="#" />
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="View/css/bootstrap.min.css" />
+          <!-- Pogo Slider CSS -->
+          <link rel="stylesheet" href="View/css/pogo-slider.min.css" />
+          <!-- Site CSS -->
+          <link rel="stylesheet" href="View/css/style.css" />
+          <!-- Responsive CSS -->
+          <link rel="stylesheet" href="View/css/responsive.css" />
+          <!-- Custom CSS -->
+          <link rel="stylesheet" href="View/css/custom.css" />
+          <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+          <script src="https://kit.fontawesome.com/a77e026872.js" crossorigin="anonymous"></script>';
 }
