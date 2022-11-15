@@ -29,10 +29,10 @@ function links()
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
           <![endif]-->
           <script src="https://kit.fontawesome.com/a77e026872.js" crossorigin="anonymous"></script>';
-  }
+}
 
-  function navBar()
-  {
+function navBar()
+{
     echo '<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
     <!-- LOADER -->
@@ -51,7 +51,7 @@ function links()
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
-                    <a class="navbar-brand" href="index.php"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
+                    <a class="navbar-brand" href="../index.php"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
                     </div>
                     <div class="site_information">
                         <ul>
@@ -79,7 +79,7 @@ function links()
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="../index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="acercaDe.php">Acerca de</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="servicios.php">Servicios</a></li>
@@ -100,8 +100,10 @@ function links()
         </div>
         
     </header>';
-  }
-function fooTer(){
+}
+
+function fooTer()
+{
   echo '<footer>
         <div class= "container__footer">
             <div class="box__footer">
@@ -145,9 +147,89 @@ function fooTer(){
     </footer>';
 }
 
-function allLinks(){
+function allLinks()
+{
   echo '<!-- ALL JS FILES -->
   <script src="js/jquery.min.js"></script>
   <!-- ALL PLUGINS -->
   <script src="js/custom.js"></script>';
+}
+
+function navBarIndex()
+{
+    echo '<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="View/images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Inicio del Header y Navbar -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <!-- Header -->
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section">
+                    <a class="navbar-brand" href="index.php"><img src="images/logoN.png" width="200" height="70" alt="image"></a>
+                    </div>
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="mailto:BancoFide@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
+                            <li><a href="tel:+506-888-banco"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
+                            <li><a class="join_bt" href="">Ingresar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <div class="col-sm-12">
+                <div class="menu_orange_section" style="background: #193773;">
+                   <nav class="navbar header-nav navbar-expand-lg"> 
+                     <div class="menu_section">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navbar -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="View/acercaDe.php">Acerca de</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="View/servicios.php">Servicios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                     </div>
+                 </nav>
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Buscar">
+                    <a class="search-btn">
+                        <img src="View/images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </header>';
+}
+
+function allLinksIndex()
+{
+  echo '<!-- ALL JS FILES -->
+  <script src="View/js/jquery.min.js"></script>
+  <!-- ALL PLUGINS -->
+  <script src="View/js/custom.js"></script>';
 }

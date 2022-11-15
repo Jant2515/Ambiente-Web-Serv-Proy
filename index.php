@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '\generales.php';
+include_once __DIR__ . '\View\generales.php';
 ?>
 
 <html>
@@ -14,7 +14,7 @@ include_once __DIR__ . '\generales.php';
 <body>
     <form role="form" action="" method="post">
         <?php
-        navBar();
+        navBarIndex();
         ?>
         </header>
 
@@ -189,7 +189,7 @@ include_once __DIR__ . '\generales.php';
             ?>
         </footer>
         <?php
-        alllinks();
+        allLinksIndex();
         ?>
         <!-- Fin del Footer -->
         <!-- PLUGINS PARA EL CARRUSEL -->

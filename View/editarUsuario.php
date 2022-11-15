@@ -1,13 +1,13 @@
 <?php
-include_once __DIR__ . '\generales.php';
-include_once __DIR__ . '\Controller\UsuarioController.php';
+include_once __DIR__ . '/generales.php';
+include_once __DIR__ . '\..\Controller\UsuarioController.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Basico -->
 
 <head>
-<?php
+    <?php
     links();
     ?>
 </head>
@@ -91,7 +91,8 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
 
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Confirme Contraseña</label>
-                                <input type="password" class="form-control" id="txtConfirmarContrasenna" name="txtConfirmarContrasenna">
+                                <input type="password" class="form-control" id="txtConfirmarContrasenna"
+                                    name="txtConfirmarContrasenna">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -103,7 +104,8 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
                         <div class="col-md-8 margin-bottom-15">
                         </div>
                         <div class="col-md-2 margin-bottom-15">
-                            <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar" name="btnGuardar" autocomplete="off" required>
+                            <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar"
+                                name="btnGuardar" autocomplete="off" required>
                             <a href="index.php" class="btn btn-info">Cancelar</a>
                         </div>
                         <div class="col-md-1 margin-bottom-15">
@@ -122,7 +124,7 @@ include_once __DIR__ . '\Controller\UsuarioController.php';
         ?>
     </footer>
     <?php
-    alllinks();
+    allLinks();
     ?>
 </body>
 
