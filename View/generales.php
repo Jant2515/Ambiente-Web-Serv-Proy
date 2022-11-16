@@ -81,7 +81,7 @@ function navBar()
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" style="color:#B8BCBF" href="../index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="acercaDe.php">Acerca de</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="divisa.php">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="servicios.php">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
                     </ul>
@@ -205,7 +205,7 @@ function navBarIndex()
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="View/acercaDe.php">Acerca de</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="View/divisa.php">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="View/servicios.php">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
                     </ul>
