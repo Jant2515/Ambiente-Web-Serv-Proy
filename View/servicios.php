@@ -41,7 +41,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Cita</h3>
                     <p class="p">Adquirir Cita</p>
                     <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="mostrarUsuarios.php" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
                 </div>
             </div>
         </div>

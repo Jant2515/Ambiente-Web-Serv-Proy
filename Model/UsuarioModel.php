@@ -19,13 +19,22 @@ function ListarUsuariosModel()
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call ListarUsuarios();";
+    $procedimiento = "call ListarUsuario();";
     $datos = $enlace -> query($procedimiento);
 
     CloseDB($enlace);
     return $datos;
 }
+function ListarCuentaModel()
+{
+    $enlace = OpenDB();
 
+    $procedimiento = "call ListarTipoCuenta();";
+    $datos = $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+    return $datos;
+}
 function ListarTiposCuentaModel()
 {
     $enlace = OpenDB();

@@ -1324,7 +1324,7 @@ pointer-events: none;
 /*--------------------------------------------------- Nuevo Footer ----------------------------------------------------*/
 footer{
 	width: 100%;
-	padding: 25px 0px;
+	padding: 1px 0px;
 	background-image: url(../images/footer.jpg)!important;
 	background-size: cover;
 }

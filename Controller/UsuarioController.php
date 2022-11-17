@@ -29,7 +29,8 @@ if(isset($_POST["btnIngresar"]))
 //El listar un usuario en mantenimiento de editar
 function ListarUsuarios()
 {
-    $datos = ListarUsuariosModel();   
+    $datos = ListarUsuariosModel(); 
+      
 
     if($datos -> num_rows > 0)
     {
@@ -39,9 +40,10 @@ function ListarUsuarios()
             echo '<td>' . $fila["cedula"] . '</td>';
             echo '<td>' . $fila["nombre"] . '</td>';
             echo '<td>' . $fila["correo"] . '</td>';
-            echo '<td>' . $fila["descripcion"] . '</td>';
-            echo '<td>' . $fila["descripcion_estado"] . '</td>';    
-            echo '<td><a href="mantUsuarioEditar.php?q=' . $fila["id"] . '">Editar<a/></td>';
+            echo '<td>' . $fila["telefono"] . '</td>';
+            echo '<td>' . $fila["Tipo_Usuario"] . '</td>';
+            echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';    
+            //echo '<td><a href="editarUsuario?q=' . $fila["id"] . '">Editar<a/></td>';
             echo '</tr>';
         }
     }
