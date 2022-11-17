@@ -57,7 +57,7 @@ function navBar()
                         <ul>
                             <li><a href="mailto:BancoFide@gmail.com"><img src="images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
                             <li><a href="tel:+506-888-banco"><img src="images/phone_icon.png" alt="#" />+506-888-banco</a></li>
-                            <li><a class="join_bt" href="">Ingresar</a></li>
+                            <li><a class="join_bt" href="Login.php">Ingresar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ function navBar()
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" style="color:#B8BCBF" href="../index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="acercaDe.php">Acerca de</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="divisa.php">Cambios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="cambioDivisas.php">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="servicios.php">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
                     </ul>
@@ -181,7 +181,7 @@ function navBarIndex()
                         <ul>
                             <li><a href="mailto:BancoFide@gmail.com"><img src="View/images/mail_icon.png" alt="#" />BancoFide@gmail.com</a></li>
                             <li><a href="tel:+506-888-banco"><img src="View/images/phone_icon.png" alt="#" />+506-888-banco</a></li>
-                            <li><a class="join_bt" href="">Ingresar</a></li>
+                            <li><a class="join_bt" href="View\Login.php">Ingresar</a></li>
                         </ul>
                     </div>
                 </div>
@@ -205,7 +205,7 @@ function navBarIndex()
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="View/acercaDe.php">Acerca de</a></li>
-                        <li><a class="nav-link" style="color:#B8BCBF" href="View/divisa.php">Cambios</a></li>
+                        <li><a class="nav-link" style="color:#B8BCBF" href="View/cambioDivisas.php">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="View/servicios.php">Servicios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Contacto</a></li>
                     </ul>
