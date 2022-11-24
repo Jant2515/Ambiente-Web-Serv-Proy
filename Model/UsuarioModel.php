@@ -25,6 +25,29 @@ function ListarUsuariosModel()
     CloseDB($enlace);
     return $datos;
 }
+
+function EditarUsuariosModel()
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call ListarUsuario();";
+    $datos = $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+    return $datos;
+}
+
+function MEliminarUsuariosodel()
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call EliminarUsuario();";
+    $datos = $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+    return $datos;
+}
+
 function ListarCuentaModel()
 {
     $enlace = OpenDB();
@@ -59,11 +82,11 @@ function ValidarOpcionesMenuModel($tipoUsuario)
 }
 
 //Para consultar la info del usuario
-function ConsultarDatosUsuarioModel($id)
+function ConsultarDatosUsuarioModel($idUsuario)
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call ConsultarUsuarioId($id);";
+    $procedimiento = "call ConsultarUsuarioId($idUsuario);";
     $datos = $enlace -> query($procedimiento);
 
     CloseDB($enlace);
@@ -83,11 +106,11 @@ function ListarTiposUsuarioModel()
 }
 
 //Para el editar usuario
-function ActualizarUsuarioModel($Nombre,$Contrasenna,$Correo,$TipoUsuario,$Id)
+function ActualizarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo,  $TipoUsuario, $TipoCuenta, $celular,$idUsuario)
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call ActualizarUsuario('$Nombre','$Contrasenna','$Correo',$TipoUsuario,$Id);";
+    $procedimiento = "call ActualizarUsuarios('$cedula', '$Nombre', '$Contrasenna', '$Correo', '$celular', '$TipoUsuario', '$TipoCuenta', '$idUsuario');";
     $enlace -> query($procedimiento);
 
     CloseDB($enlace);

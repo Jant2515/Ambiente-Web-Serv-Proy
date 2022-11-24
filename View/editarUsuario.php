@@ -1,6 +1,8 @@
 <?php
 include_once __DIR__ . '/generales.php';
-include_once __DIR__ . '/UsuarioController.php';
+include_once __DIR__ . '\..\Controller\UsuarioController.php';
+
+$datos = ConsultarDatosUsuario($_GET["q"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,12 +14,17 @@ include_once __DIR__ . '/UsuarioController.php';
     ?>
 </head>
 
-<body>
-<form role="form" action="" method="post">
-    <?php
-    navBar();
-    ?>
+<body onsubmit="return ">
+    <form role="form" action="" method="post">
+        <script src="View/js/RedirecciondeSeguridad.js"></script>
+        <?php
+        navBar();
+        ?>
+
         <br /><br />
+
+        <input type="hidden" value="<?php echo $datos["idUsuario"] ?>" idUsuario="txtIdUsuario" name="txtIdUsuario">
+
         <div class="templatemo-content-wrapper">
             <div class="templatemo-content">
 
@@ -31,17 +38,17 @@ include_once __DIR__ . '/UsuarioController.php';
 
                             <div class="col-md-2 margin-bottom-15">
                                 <label class="control-label">Cédula</label>
-                                <input type="text" class="form-control" id="txtCedula" name="txtCedula">
+                                <input type="text" class="form-control" id="txtCedula" name="txtCedula" autocomplete="off" required readonly="readonly" value="<?php echo $datos["cedula"] ?>">
                             </div>
 
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Nombre Completo</label>
-                                <input type="text" class="form-control" id="txtNombre" name="txtNombre">
+                                <input type="text" class="form-control" id="txtNombre" name="txtNombre" autocomplete="off" required value="<?php echo $datos["nombre"] ?>">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
                                 <label class="control-label">Correo Electronico</label>
-                                <input type="text" class="form-control" id="txtCorreo" name="txtCorreo">
+                                <input type="text" class="form-control" id="txtCorreo" name="txtCorreo" autocomplete="off" required value="<?php echo $datos["correo"] ?>">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -62,15 +69,17 @@ include_once __DIR__ . '/UsuarioController.php';
                                     ?>
                                 </select>
                             </div>
-
-                            <div class="col-md-4 margin-bottom-15">
-                                <label class="control-label">Dirrecion Fisica</label>
-                                <input type="text" class="form-control" id="txtDireccion" name="txtDireccion">
-                            </div>
-
                             <div class="col-md-2 margin-bottom-15">
+                                <label class="control-label">Tipo Cuenta</label>
+                                <select class="form-control" id="cboTipoCuenta" name="cboTipoCuenta">
+                                    <?php
+                                    ListarTiposCuenta($datos["idTipoCuenta"]);
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Telefono</label>
-                                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono">
+                                <input type="text" class="form-control" id="txtTelefono" name="txtTelefono" autocomplete="off" required value="<?php echo $datos["telefono"] ?>">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -85,7 +94,7 @@ include_once __DIR__ . '/UsuarioController.php';
 
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Contraseña</label>
-                                <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna">
+                                <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna" autocomplete="off" required value="<?php echo $datos["contrasenna"] ?>">
                             </div>
 
                             <div class="col-md-4 margin-bottom-15">
@@ -102,8 +111,8 @@ include_once __DIR__ . '/UsuarioController.php';
                         <div class="col-md-8 margin-bottom-15">
                         </div>
                         <div class="col-md-2 margin-bottom-15">
-                        <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar" name="btnGuardar" autocomplete="off" required>
-                            <a href="index.php" class="btn btn-info">Cancelar</a>
+                            <input type="submit" value="Guardar" class="btn btn-success" id="btnActualizar" name="btnActualizar" autocomplete="off" required>
+                            <a href="editarCuenta.php" class="btn btn-info">Cancelar</a>
                         </div>
                         <div class="col-md-1 margin-bottom-15">
                         </div>
@@ -123,6 +132,7 @@ include_once __DIR__ . '/UsuarioController.php';
     <?php
     allLinks();
     ?>
+
 </body>
 
 </html>

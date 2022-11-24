@@ -16,21 +16,13 @@ body {
 	min-height: 100vh;
 	margin: 0;
 }
-
-h3 {
-	margin: 10px 0;
+.hh{
+	color: #ffffff
 }
+.tt {
 
-h6 {
-	margin: 5px 0;
-	text-transform: uppercase;
+	color: #ffffff
 }
-
-p {
-	font-size: 14px;
-	line-height: 21px;
-}
-
 .card-container {
 	background-color: #193773;
 	border-radius: 5px;

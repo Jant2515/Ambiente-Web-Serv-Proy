@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +13,13 @@
 <img src="Images/logoN.png" alt="Logologin" class="Logologin">
   <div class="container">
     <label for="uname"><b>Usuario</b></label>
-    <input type="text" id="Usu" placeholder="Enter Username" name="txtUsuario" autocomplete="off" required>
+    <input type="text" id="txtUsuario" placeholder="Enter Username" name="txtUsuario" autocomplete="off" >
 
     <label for="psw"><b>Contraseña</b></label>
-    <input type="password" id="conT" placeholder="Enter Password" name="txtContrasenna" autocomplete="off" required>
-
-    <button id="Entr" type="submit">Ingresar</button>
+    <input type="password" id="txtContrasenna" placeholder="Enter Password" name="txtContrasenna" autocomplete="off" >
+    
+   
+    <button id="txtEntr"  type="submit" name="txtEntr">Ingresar</button>
     <label>
       <input type="checkbox" id="Terminos" checked="checked" name="remember">Terminos y condiciones
     </label>

@@ -6,10 +6,11 @@ if (session_status() == PHP_SESSION_NONE)
 include_once __DIR__ . '\..\Model\UsuarioModel.php';
 
 //Esto es en el scrip del boton ingresar del login
+
 if(isset($_POST["btnIngresar"]))
 {
-    $cedula = $_POST["txtIdentificacion"];
-    $contrasenna = $_POST["txtPass"];
+    $cedula = $_POST["txtUsuario"];
+    $contrasenna = $_POST["txtContrasenna"];
 
     $datos = ValidarUsuarioModel($cedula, $contrasenna);   
         
@@ -26,43 +27,64 @@ if(isset($_POST["btnIngresar"]))
     }
 }
 
+
 //El listar un usuario en mantenimiento de editar
 function ListarUsuarios()
 {
-    $datos = ListarUsuariosModel(); 
-      
+    $datos = ListarUsuariosModel();
 
-    if($datos -> num_rows > 0)
-    {
-        while($fila = mysqli_fetch_array($datos))
-        {
+
+    if ($datos->num_rows > 0) {
+        while ($fila = mysqli_fetch_array($datos)) {
             echo '<tr>';
             echo '<td>' . $fila["cedula"] . '</td>';
             echo '<td>' . $fila["nombre"] . '</td>';
             echo '<td>' . $fila["correo"] . '</td>';
             echo '<td>' . $fila["telefono"] . '</td>';
             echo '<td>' . $fila["Tipo_Usuario"] . '</td>';
-            echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';    
-            //echo '<td><a href="editarUsuario?q=' . $fila["id"] . '">Editar<a/></td>';
+            echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';
             echo '</tr>';
         }
     }
 }
 
+
+
+
+function EditarUsuarios()
+{
+    $datos = EditarUsuariosModel();
+
+
+    if ($datos->num_rows > 0) {
+        while ($fila = mysqli_fetch_array($datos)) {
+            echo '<tr>';
+            echo '<td>' . $fila["cedula"] . '</td>';
+            echo '<td>' . $fila["nombre"] . '</td>';
+            echo '<td>' . $fila["correo"] . '</td>';
+            echo '<td>' . $fila["telefono"] . '</td>';
+            echo '<td>' . $fila["Tipo_Usuario"] . '</td>';
+            echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';
+            echo '<td><a href="editarUsuario.php?q=' . $fila["idUsuario"] . '">Editar<a/></td>';
+            echo '<td><input type="button" value="Borrar" onclick="Borra(' . $fila["idUsuario"] . ')"></td>';
+            echo '</tr>';
+        }
+    }
+}
+
+
 //Dependiendo del roll asi se le mostrara el menu
 function ValidarOpcionesMenu()
 {
     $tipo = $_SESSION["sesionTipoUsuario"];
-    $datos = ValidarOpcionesMenuModel($tipo);   
+    $datos = ValidarOpcionesMenuModel($tipo);
 
     echo '<div class="template-page-wrapper">
           <div class="navbar-collapse collapse templatemo-sidebar">
           <ul class="templatemo-sidebar-menu">';
 
-    if($datos -> num_rows > 0)
-    {
-        while($fila = mysqli_fetch_array($datos))
-        {
+    if ($datos->num_rows > 0) {
+        while ($fila = mysqli_fetch_array($datos)) {
             echo '<li><a href="' . $fila["redireccion"] . '"><i class="' . $fila["icono"] . '"></i>' . $fila["texto"] . '</a></li>';
         }
     }
@@ -72,21 +94,19 @@ function ValidarOpcionesMenu()
 }
 
 //Aca es el procedimiento de lista desplegable de seleccionar el tipo de usuario a ingresar
-function ConsultarDatosUsuario($id)
+function ConsultarDatosUsuario($idUsuario)
 {
-    $datos = ConsultarDatosUsuarioModel($id);   
+    $datos = ConsultarDatosUsuarioModel($idUsuario);
     return mysqli_fetch_array($datos);
 }
 
 function ListarTiposUsuario($tipo)
 {
-    $datos = ListarTiposUsuarioModel();   
-    if($datos -> num_rows > 0)
-    { 
+    $datos = ListarTiposUsuarioModel();
+    if ($datos->num_rows > 0) {
         echo '<option selected value=""> Selecccione </option>';
-        while($fila = mysqli_fetch_array($datos))
-        {  
-            if($tipo == $fila["idTipoUsuario"])
+        while ($fila = mysqli_fetch_array($datos)) {
+            if ($tipo == $fila["idTipoUsuario"])
                 echo '<option selected value="' . $fila["idTipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
             else
                 echo '<option value="' . $fila["idTipoUsuario"] . '">' . $fila["descripcion"] . '</option>';
@@ -96,13 +116,11 @@ function ListarTiposUsuario($tipo)
 
 function ListarTiposCuenta($tipo)
 {
-    $datos = ListarTiposCuentaModel();   
-    if($datos -> num_rows > 0)
-    { 
+    $datos = ListarTiposCuentaModel();
+    if ($datos->num_rows > 0) {
         echo '<option selected value=""> Selecccione </option>';
-        while($fila = mysqli_fetch_array($datos))
-        {  
-            if($tipo == $fila["idTipoCuenta"])
+        while ($fila = mysqli_fetch_array($datos)) {
+            if ($tipo == $fila["idTipoCuenta"])
                 echo '<option selected value="' . $fila["idTipoCuenta"] . '">' . $fila["tipoCuenta"] . '</option>';
             else
                 echo '<option value="' . $fila["idTipoCuenta"] . '">' . $fila["tipoCuenta"] . '</option>';
@@ -111,30 +129,29 @@ function ListarTiposCuenta($tipo)
 }
 
 //El boton de actualizar (Guardar en el editar)
-if(isset($_POST["btnActualizar"]))
-{
+if (isset($_POST["btnActualizar"])) {
     $Nombre = $_POST["txtNombre"];
+    $cedula = $_POST["txtCedula"];
     $Contrasenna = $_POST["txtContrasenna"];
     $Correo = $_POST["txtCorreo"];
     $TipoUsuario = $_POST["cboTipoUsuario"];
-    $Id = $_POST["txtId"];
-
-    ActualizarUsuarioModel($Nombre, $Contrasenna, $Correo, $TipoUsuario, $Id);  
-    header("Location: index.php");  
+    $TipoCuenta = $_POST["cboTipoCuenta"];
+    $celular = $_POST["txtTelefono"];
+    $idUsuario = $_POST["txtIdUsuario"];
+    ActualizarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo,  $TipoUsuario, $TipoCuenta, $celular,$idUsuario);
+    header("Location: ../index.php");
 }
 
 //El guardar en BD
-if(isset($_POST["btnGuardar"]))
-{   
+if (isset($_POST["btnGuardar"])) {
     $Nombre = $_POST["txtNombre"];
-    $cedula= $_POST["txtCedula"];
+    $cedula = $_POST["txtCedula"];
     $Contrasenna = $_POST["txtContrasenna"];
     $Correo = $_POST["txtCorreo"];
     $TipoUsuario = $_POST["cboTipoUsuario"];
     $Celular = $_POST["txtTelefono"];
     $TipoCuenta = $_POST["cboTipoCuenta"];
 
-    GuardarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo, $Celular, $TipoUsuario, $TipoCuenta);  
-    header("Location: ../index.php");  
+    GuardarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo, $Celular, $TipoUsuario, $TipoCuenta);
+    header("Location: ../index.php");
 }
-?>

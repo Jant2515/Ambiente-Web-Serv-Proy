@@ -18,8 +18,8 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
 <body>
     <form role="form" action="" method="post">
         <?php
-    navBar();
-    ?>
+        navBar();
+        ?>
         <br /><br />
         <div class="templatemo-content-wrapper">
             <div class="templatemo-content">
@@ -66,12 +66,15 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                                 </select>
                             </div>
 
-                            <div class="col-md-4 margin-bottom-15">
-                                <label class="control-label">Dirrecion Fisica</label>
-                                <input type="text" class="form-control" id="txtDireccion" name="txtDireccion">
-                            </div>
-
                             <div class="col-md-2 margin-bottom-15">
+                                <label class="control-label">Tipo Cuenta</label>
+                                <select class="form-control" id="cboTipoCuenta" name="cboTipoCuenta">
+                                    <?php
+                                    ListarTiposCuenta($datos["idTipoCuenta"]);
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Telefono</label>
                                 <input type="text" class="form-control" id="txtTelefono" name="txtTelefono">
                             </div>
@@ -86,24 +89,16 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                             <div class="col-md-2 margin-bottom-15">
                             </div>
 
-                            <div class="col-md-2 margin-bottom-15">
-                                <label class="control-label">Tipo Cuenta</label>
-                                <select class="form-control" id="cboTipoCuenta" name="cboTipoCuenta">
-                                    <?php
-                                    ListarTiposCuenta($datos["idTipoCuenta"]);
-                                    ?>
-                                </select>
-                            </div>
+
 
                             <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Contraseña</label>
                                 <input type="password" class="form-control" id="txtContrasenna" name="txtContrasenna">
                             </div>
 
-                            <div class="col-md-2 margin-bottom-15">
+                            <div class="col-md-4 margin-bottom-15">
                                 <label class="control-label">Confirme Contraseña</label>
-                                <input type="password" class="form-control" id="txtConfirmarContrasenna"
-                                    name="txtConfirmarContrasenna">
+                                <input type="password" class="form-control" id="txtConfirmarContrasenna" name="txtConfirmarContrasenna">
                             </div>
 
                             <div class="col-md-2 margin-bottom-15">
@@ -115,8 +110,7 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                         <div class="col-md-8 margin-bottom-15">
                         </div>
                         <div class="col-md-2 margin-bottom-15">
-                            <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar"
-                                name="btnGuardar" autocomplete="off" required>
+                            <input type="submit" value="Guardar" class="btn btn-success" id="btnGuardar" name="btnGuardar" autocomplete="off" required>
                             <a href="../index.php" class="btn btn-info">Cancelar</a>
                         </div>
                         <div class="col-md-1 margin-bottom-15">

@@ -63,7 +63,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Editar Cuenta</h3>
                     <p class="p">Editar Informacion de la cuenta</p>
                     <br>
-                    <a class="btn btn-primary" href="editarUsuario.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="editarCuenta.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
                 </div>
             </div>
             <div class="caja">
