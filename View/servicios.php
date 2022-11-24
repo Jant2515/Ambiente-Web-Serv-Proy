@@ -23,7 +23,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Depositos</h3>
                     <p class="p">Realizar depositos</p>
                     <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="Depositos.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
                 </div>
             </div>
             <div class="caja">
@@ -32,7 +32,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Tranferencia</h3>
                     <p class="p">Realizar tranferencia</p>
                     <br>
-                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="Transferencia.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
                 </div>
             </div>
             <div class="caja">
