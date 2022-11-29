@@ -102,6 +102,27 @@ function navBar()
         
     </header>';
 }
+function modal()
+{
+
+  include_once __DIR__ . '\..\Controller\UtilitarioController.php';
+
+  echo '<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+              <h4 class="modal-title" id="myModalLabel"></h4>¿Está seguro de cerrar la sesión?</h4>
+            </div>
+            <div class="modal-footer">
+              <form action="" method="post">
+                <input type="submit" class="btn btn-primary" value="SI" id="btnCerrar" name="btnCerrar">
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>';  
+    }
 
 function fooTer()
 {
