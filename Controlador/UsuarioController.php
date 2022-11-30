@@ -4,6 +4,7 @@ if (session_status() == PHP_SESSION_NONE)
     session_start();
 
 include_once __DIR__ . '\..\Model\UsuarioModel.php';
+include_once __DIR__ . '\UtilitarioController.php';
 
 //Esto es en el scrip del boton ingresar del login
 
@@ -76,6 +77,9 @@ function EditarUsuarios()
 //Dependiendo del roll asi se le mostrara el menu
 function ValidarOpcionesMenu()
 {
+    if($_SESSION["sesionTipoUsuario"] == null)
+        header("Location: ..\index.php");
+    
     $tipo = $_SESSION["sesionTipoUsuario"];
     $datos = ValidarOpcionesMenuModel($tipo);
 
@@ -138,8 +142,19 @@ if (isset($_POST["btnActualizar"])) {
     $TipoCuenta = $_POST["cboTipoCuenta"];
     $celular = $_POST["txtTelefono"];
     $idUsuario = $_POST["txtIdUsuario"];
-    ActualizarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo,  $TipoUsuario, $TipoCuenta, $celular,$idUsuario);
-    header("Location: ../index.php");
+    $resultado = ActualizarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo,  $TipoUsuario, $TipoCuenta, $celular,$idUsuario);
+
+    if($resultado == true)
+    {
+        //EnviarCorreo($Correo, 'Información Actualizada', 'Esta es la información actualizada');
+        header("Location: MantUsuario.php"); 
+    }
+    else
+    {
+        //Que pasa si algo sale mal??
+        header("Location: MantUsuario.php"); 
+    } 
+
 }
 
 //El guardar en BD
