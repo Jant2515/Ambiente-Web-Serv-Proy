@@ -74,6 +74,7 @@ function EditarUsuarios()
 }
 
 
+
 //Dependiendo del roll asi se le mostrara el menu
 function ValidarOpcionesMenu()
 {

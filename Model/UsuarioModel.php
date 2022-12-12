@@ -37,6 +37,7 @@ function EditarUsuariosModel()
     return $datos;
 }
 
+
 function MEliminarUsuariosodel()
 {
     $enlace = OpenDB();
