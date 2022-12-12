@@ -185,7 +185,7 @@ include_once __DIR__ . '\View\generales.php';
         <!-- Inicio Footer -->
         <footer>
             <?php
-            fooTer();
+            fooTerIndex();
             ?>
         </footer>
         <?php

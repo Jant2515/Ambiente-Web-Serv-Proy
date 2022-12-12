@@ -1,13 +1,17 @@
+<?php
+    include_once __DIR__ . '\generales.php';
+?>
 <!doctype html>
 <html lang="en">
 
 <head>
+    <?php
+        links();
+    ?>
     <title>Contactenos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="css/stylefor.css">
@@ -15,6 +19,9 @@
 </head>
 
 <body>
+    <?php
+        navBar();
+    ?>
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -27,8 +34,8 @@
                     <div class="wrapper">
                         <div class="row no-gutters">
                             <div class="col-md-7 d-flex align-items-stretch">
-                                <div class="contact-wrap w-100 p-md-5 p-4">
-                                    <h3 class="mb-4">Ponente en contacto</h3>
+                                <div style="background-color: #EAEAEA;" class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3 class="mb-4">Ponte en contacto</h3>
                                     <div id="form-message-warning" class="mb-4"></div>
                                     <div id="form-message-success" class="mb-4">
                                         Your message was sent, thank you!
@@ -115,7 +122,15 @@
             swal('Gracias por contactarnos', 'Se envio con exito', 'success');
         }
     </script>
-
+    <!-- Inicio Footer -->
+    <footer>
+        <?php
+        fooTer();
+        ?>
+    </footer>
+    <?php
+    alllinks();
+    ?>
 </body>
 
 </html>

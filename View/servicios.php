@@ -15,6 +15,7 @@ include_once __DIR__ . '\generales.php';
     <?php
     navBar();
     ?>
+    <br> <br> <br>
     <div class="bodyServices">
         <div class="containergg">
             <div class="caja">
@@ -41,7 +42,7 @@ include_once __DIR__ . '\generales.php';
                     <h3>Cita</h3>
                     <p class="p">Adquirir Cita</p>
                     <br>
-                    <a class="btn btn-primary" href="mostrarUsuarios.php" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
+                    <a class="btn btn-primary" href="agregarCita.php" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
                 </div>
             </div>
         </div>
@@ -75,6 +76,29 @@ include_once __DIR__ . '\generales.php';
                     <a class="btn btn-primary" href="cambioDivisas.php" role="button" style="background-color: #193773; border-color: #193773;">Mostrar Mas</a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="bodyServices">
+        <div class="containergg">
+            <div class="caja">
+                <div class="icon">07</div>
+                <div class="content">
+                    <h3>Ver Usuarios</h3>
+                    <p class="p">Mostrar Usuarios Existentes</p>
+                    <br>
+                    <a class="btn btn-primary" href="mostrarUsuarios.php" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                </div>
+            </div>
+            <div class="caja">
+                <div class="icon">08</div>
+                <div class="content">
+                    <h3>Ver Citas</h3>
+                    <p class="p">Mostrar Citas Existentes</p>
+                    <br>
+                    <a class="btn btn-primary" href="#" role="button" style="background-color: #193773; border-color: #193773">Mostrar Mas</a>
+                </div>
+            </div>
+            
         </div>
     </div>
     <!-- Inicio Footer -->

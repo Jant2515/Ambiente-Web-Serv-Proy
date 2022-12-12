@@ -148,10 +148,10 @@ function fooTer()
             </div>
             <div class="box__footer">
                 <h2>Compañia</h2>
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Procesos</a>
-                <a href="#">Servicios</a>
+                <a href="acercaDe.php">Acerca de</a>
+                <a href="servicios.php">Servicios</a>
+                <a href="cambioDivisas.php">Cambios</a>
+                <a href="contact.php">Contacto</a>
             </div>
             <div class="box__footer">
                 <h2>Redes Sociales</h2>
@@ -169,6 +169,50 @@ function fooTer()
     </footer>';
 }
 
+function fooTerIndex()
+{
+  echo '<footer>
+        <div class= "container__footer">
+            <div class="box__footer">
+                <div class="logo"
+                    <img src="" alt="">
+                </div>
+                <div class="terms">
+                    <p>El Banco es una entidad bancaria estatal de índole comercial que
+                         opera en Costa Rica. Con un patrimonio de ¢253,574,654,782
+                         y activos por ¢5,278,383,864,857, el banco se ha constituido como una de las más 
+                         sólidas empresas bancarias de Costa Rica y de la región centroamericana.​</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Servicios Adicionales</h2>
+                <a href="#">Desarrollo</a>
+                <a href="#">Marketing</a>
+                <a href="#">IOS</a>
+                <a href="#">Android</a>
+            </div>
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="View/acercaDe.php">Acerca de</a>
+                <a href="View/servicios.php">Servicios</a>
+                <a href="View/cambioDivisas.php">Cambios</a>
+                <a href="View/contact.php">Contacto</a>
+            </div>
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+            </div>
+        </div>
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados @ 2022
+            <b>Ambiente web C//S</p>
+        </div>
+    </footer>';
+}
 function allLinks()
 {
   echo '<!-- ALL JS FILES -->
