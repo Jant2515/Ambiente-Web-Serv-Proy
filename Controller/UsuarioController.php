@@ -7,7 +7,6 @@ include_once __DIR__ . '\..\Model\UsuarioModel.php';
 include_once __DIR__ . '\UtilitarioController.php';
 
 //Esto es en el scrip del boton ingresar del login
-
 if(isset($_POST["btnIngresar"]))
 {
     $cedula = $_POST["txtUsuario"];
@@ -28,13 +27,11 @@ if(isset($_POST["btnIngresar"]))
     }
 }
 
-
 //El listar un usuario en mantenimiento de editar
 function ListarUsuarios()
 {
     $datos = ListarUsuariosModel();
 
-
     if ($datos->num_rows > 0) {
         while ($fila = mysqli_fetch_array($datos)) {
             echo '<tr>';
@@ -48,15 +45,11 @@ function ListarUsuarios()
         }
     }
 }
-
-
-
 
 function EditarUsuarios()
 {
     $datos = EditarUsuariosModel();
 
-
     if ($datos->num_rows > 0) {
         while ($fila = mysqli_fetch_array($datos)) {
             echo '<tr>';
@@ -66,13 +59,12 @@ function EditarUsuarios()
             echo '<td>' . $fila["telefono"] . '</td>';
             echo '<td>' . $fila["Tipo_Usuario"] . '</td>';
             echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';
-            echo '<td><a href="editarUsuario.php?q=' . $fila["idUsuario"] . '">Editar<a/></td>';
-            echo '<td><input type="button" value="Borrar" onclick="Borra(' . $fila["idUsuario"] . ')"></td>';
+            echo '<td><a class="btn btn-secondary" href="editarUsuario.php?q=' . $fila["idUsuario"] . '">Editar<a/></td>';
+            echo '<td><input class="btn btn-danger" type="button" value="Borrar" onclick="Borra(' . $fila["idUsuario"] . ')"></td>';
             echo '</tr>';
         }
     }
 }
-
 
 
 //Dependiendo del roll asi se le mostrara el menu

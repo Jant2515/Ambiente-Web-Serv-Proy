@@ -26,14 +26,9 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
 
                 <div class="row">
                     <div class="col-md-12">
-                
-                    <div class="btn-group pull-right"> 
-                        <a href="agregarUsuario.php"><button type="button" class="btn btn-info" style="background-color: #2E468C;">Añadir Usuario</button></a>
-                    </div>
-                    
-                    <br/><br/>
-                    
-
+                    <br/>
+                    <h2>Tabla para Modificar Usuarios</h2>
+                    <br/>
                     <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -54,7 +49,9 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                             ?>
                         </tbody>
                     </table>
-
+                    <div class="btn-group pull-right"> 
+                        <a href="agregarUsuario.php"><button type="button" class="btn btn-info" style="background-color: #2E468C;">Añadir Usuario</button></a>
+                    </div>
                     
                     </div>
                 </div>
