@@ -47,15 +47,15 @@ include_once __DIR__ . '/generales.php';
                                 <label>
                                     CVC
                                 </label>
-                                <input value="" data-conekta="card[cvc]" class="form-control"  type="text" maxlength="4" >
+                                <input name="cvc" id="cvc" value="" data-conekta="card[cvc]" class="form-control"  type="text" maxlength="4" >
                             </div>
                             <div class="col-md-6">
                                     <label>
                                         Fecha de expiración (MM/AA)
                                     </label>
                                     <div>
-                                        <input style="width:50px; display:inline-block" value="" data-conekta="card[exp_month]" class="form-control"  type="text" maxlength="2" >
-                                        <input style="width:50px; display:inline-block" value="" data-conekta="card[exp_year]" class="form-control"  type="text" maxlength="2" >
+                                        <input style="width:50px; display:inline-block" name="mes" id="mes" value="" data-conekta="card[exp_month]" class="form-control"  type="text" maxlength="2" >
+                                        <input style="width:50px; display:inline-block" name="year" id="year" value="" data-conekta="card[exp_year]" class="form-control"  type="text" maxlength="2" >
 
                                     </div>
                             </div>
@@ -63,22 +63,22 @@ include_once __DIR__ . '/generales.php';
                     <div class="row">
                         <div class="col-md-4">
                             <label><span>Cuenta destino</span></label>
-                            <input class="form-control" type="text" name="email" id="email" maxlength="200" value="">
-                        </div>
-                        <div class="col-md-4">
-                            <label>Monto</label>
-                            <input class="form-control" type="text" name="description" id="description" maxlength="100" value="">
+                            <input class="form-control" type="text" name="desti" id="desti" maxlength="200" value="">
                         </div>
                         <div class="col-md-4">
                             <label>Motivo</label>
-                            <input class="form-control" type="number" name="total" id="total" value="">
+                            <input class="form-control" type="text" name="motivo" id="motivo"maxlength="100" value="">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Monto</label>
+                            <input class="form-control" name="monto" id="monto" type="number" name="total" id="total" value="">
                         </div>
                        
                     </div>
                     <br>
                     <div class="row">
                             <div class="col-md-12" style="text-align:center;">
-                               <button class="btn btn-success btn-lg">
+                               <button class="btn btn-success btn-lg" name="btnAgregar" id="btnAgregar">
                                    <i class="fa fa-check-square"></i> PAGAR
                                </button>
                             </div>

@@ -19,11 +19,11 @@ if(isset($_POST["btnIngresar"]))
         $datosUsuario = mysqli_fetch_array($datos);
         $_SESSION["sesionNombre"] = $datosUsuario["nombre"];
         $_SESSION["sesionTipoUsuario"] = $datosUsuario["tipoUsuario"];
-        header("Location: View\mantUsuario.php");
+        header("Location: ..\index.php");
     }
     else
     {
-        header("Location: ..\index.php");
+        header("Location: Login.php");
     }
 }
 
@@ -60,7 +60,7 @@ function EditarUsuarios()
             echo '<td>' . $fila["Tipo_Usuario"] . '</td>';
             echo '<td>' . $fila["Tipo_Cuenta"] . '</td>';
             echo '<td><a class="btn btn-secondary" href="editarUsuario.php?q=' . $fila["idUsuario"] . '">Editar<a/></td>';
-            echo '<td><input class="btn btn-danger" type="button" value="Borrar" onclick="Borra(' . $fila["idUsuario"] . ')"></td>';
+            echo '<td><a class="btn btn-danger"href="Eliminar.php?q=' . $fila["idUsuario"] . '">Eliminar</td>';
             echo '</tr>';
         }
     }
@@ -140,12 +140,12 @@ if (isset($_POST["btnActualizar"])) {
     if($resultado == true)
     {
         //EnviarCorreo($Correo, 'Información Actualizada', 'Esta es la información actualizada');
-        header("Location: MantUsuario.php"); 
+        header("Location: editarCuenta.php"); 
     }
     else
     {
         //Que pasa si algo sale mal??
-        header("Location: MantUsuario.php"); 
+        header("Location: editarCuenta.php"); 
     } 
 
 }
@@ -162,4 +162,18 @@ if (isset($_POST["btnGuardar"])) {
 
     GuardarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo, $Celular, $TipoUsuario, $TipoCuenta);
     header("Location: ../index.php");
+}
+
+if (isset($_POST["btnAgregarTra"])) {
+    $Nombre = $_POST["name"];
+    $NumTarjeta = $_POST["card"];
+    $CVC = $_POST["cvc"];
+    $Monto = $_POST["monto"];
+    $ExpMes = $_POST["mes"];
+    $ExpAn = $_POST["year"];
+    $CuentaDes = $_POST["desti"];
+    $Motivo = $_POST["motivo"];
+
+    AgregarTransferModel($Nombre,$NumTarjeta,$CVC,$Monto,$ExpMes,$ExpAn,$CuentaDes,$Motivo);
+    header("Location: servicios.php");
 }

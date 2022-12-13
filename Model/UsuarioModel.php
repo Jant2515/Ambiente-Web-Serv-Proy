@@ -38,11 +38,11 @@ function EditarUsuariosModel()
 }
 
 
-function MEliminarUsuariosodel()
+function MEliminarUsuariosodel($idUsuario)
 {
     $enlace = OpenDB();
 
-    $procedimiento = "call EliminarUsuario();";
+    $procedimiento = "call EliminarUsuario('$idUsuario');";
     $datos = $enlace -> query($procedimiento);
 
     CloseDB($enlace);
@@ -128,4 +128,16 @@ function GuardarUsuarioModel($cedula,$Nombre,$Contrasenna,$Correo,$Celular,$Tipo
     CloseDB($enlace);
 }
 
+function AgregarTransferModel($Nombre,$NumTarjeta,$CVC,$Monto,$ExpMes,$ExpAn,$CuentaDes,$Motivo)
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call AgregarTransfer('$Nombre','$NumTarjeta','$CVC','$Monto','$ExpMes','$ExpAn','$CuentaDes','$Motivo');";
+    $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+}
+
 ?>
+
+
