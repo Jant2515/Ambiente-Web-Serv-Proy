@@ -138,6 +138,28 @@ function AgregarTransferModel($Nombre,$NumTarjeta,$CVC,$Monto,$ExpMes,$ExpAn,$Cu
     CloseDB($enlace);
 }
 
+function ListarCitasModel()
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call ListarCitas();";
+    $datos = $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+    return $datos;
+}
+
+//Para guardar un citas nuevo 
+function GuardarCitasModel($cedula,$Nombre,$Correo)
+{
+    $enlace = OpenDB();
+
+    $procedimiento = "call InsertarCita('$cedula','$Nombre','$Correo');";
+    $enlace -> query($procedimiento);
+
+    CloseDB($enlace);
+}
+
 ?>
 
 

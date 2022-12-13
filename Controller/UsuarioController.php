@@ -177,3 +177,29 @@ if (isset($_POST["btnAgregarTra"])) {
     AgregarTransferModel($Nombre,$NumTarjeta,$CVC,$Monto,$ExpMes,$ExpAn,$CuentaDes,$Motivo);
     header("Location: servicios.php");
 }
+
+function ListarCitas()
+{
+    $datos = ListarCitasModel();
+
+    if ($datos->num_rows > 0) {
+        while ($fila = mysqli_fetch_array($datos)) {
+            echo '<tr>';
+            echo '<td>' . $fila["cedula"] . '</td>';
+            echo '<td>' . $fila["nombre"] . '</td>';
+            echo '<td>' . $fila["correo"] . '</td>';
+            echo '</tr>';
+        }
+    }
+}
+
+//El guardar en BD
+if (isset($_POST["btnGuardarCita"])) {
+    $cedula = $_POST["txtCedula"];
+    $Nombre = $_POST["txtNombre"];
+    $Correo = $_POST["txtCorreo"];
+
+    GuardarCitasModel($cedula, $Nombre, $Correo);
+    header("Location: mostrarCitas.php");
+}
+?>

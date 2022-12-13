@@ -31,7 +31,7 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                         <div class="col-md-1 margin-bottom-15">
                         </div>
 
-                        <div class="col-md-2 margin-bottom-15">
+                        <div class="col-md-3 margin-bottom-15">
                             <label class="control-label">Cédula</label>
                             <input type="text" class="form-control" id="txtCedula" name="txtCedula">
                         </div>
@@ -41,14 +41,9 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                             <input type="text" class="form-control" id="txtNombre" name="txtNombre">
                         </div>
                         
-                        <div class="col-md-2 margin-bottom-15">
+                        <div class="col-md-3 margin-bottom-15">
                             <label class="control-label">Correo Electronico</label>
                             <input type="text" class="form-control" id="txtCorreo" name="txtCorreo">
-                        </div>
-
-                        <div class="col-md-2 margin-bottom-15">
-                            <label class="control-label">Cita</label>
-                            <input type="text" class="form-control" id="txtCita" name="txtCita">
                         </div>
 
                         <div class="col-md-1 margin-bottom-15">
@@ -59,7 +54,7 @@ include_once __DIR__ . '\..\Controller\UsuarioController.php';
                     <div class="col-md-10 margin-bottom-15">
                     </div>
                     <div class="col-md-2 margin-bottom-15">
-                        <input type="submit" value="Guardar" class="btn btn-primary" id="btnGuardar" name="btnGuardar">
+                        <input type="submit" value="Guardar" class="btn btn-primary" id="btnGuardarCita" name="btnGuardarCita">
                         <input type="submit" value="Cancelar" class="btn btn-secondary" id="btnCancelar" name="btnCancelar">
                     </div>
                     
