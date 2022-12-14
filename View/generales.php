@@ -269,7 +269,7 @@ function navBarIndex()
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="../index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Acerca de</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Servicios</a></li>
@@ -585,7 +585,7 @@ function navBarContact()
                 <!-- Navbar -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" style="color:#B8BCBF" href="index.php">Inicio</a></li>
+                        <li><a class="nav-link active" style="color:#B8BCBF" href="../index.php">Inicio</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Acerca de</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Cambios</a></li>
                         <li><a class="nav-link" style="color:#B8BCBF" href="#">Servicios</a></li>

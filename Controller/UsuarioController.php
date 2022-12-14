@@ -9,17 +9,24 @@ include_once __DIR__ . '\UtilitarioController.php';
 //Esto es en el scrip del boton ingresar del login
 if(isset($_POST["btnIngresar"]))
 {
-    $cedula = $_POST["txtUsuario"];
-    $contrasenna = $_POST["txtContrasenna"];
+    $cedula = $_POST["txtIdentificacion"];
+    $contrasenna = $_POST["txtPass"];
 
     $datos = ValidarUsuarioModel($cedula, $contrasenna);   
         
     if($datos -> num_rows > 0)
     {
         $datosUsuario = mysqli_fetch_array($datos);
-        $_SESSION["sesionNombre"] = $datosUsuario["nombre"];
-        $_SESSION["sesionTipoUsuario"] = $datosUsuario["tipoUsuario"];
-        header("Location: ..\index.php");
+        $_SESSION["idTipoUsuario"] = $datosUsuario["idTipoUsuario"];
+        
+        if($_SESSION["idTipoUsuario"] == 1)
+        {
+            header("Location: ../index.php");
+        }
+        elseif($_SESSION["idTipoUsuario"] == 2)
+        {
+            header("Location: inicio.php");
+        }
     }
     else
     {
@@ -46,6 +53,7 @@ function ListarUsuarios()
     }
 }
 
+//Editar los usuarios 
 function EditarUsuarios()
 {
     $datos = EditarUsuariosModel();
@@ -161,7 +169,7 @@ if (isset($_POST["btnGuardar"])) {
     $TipoCuenta = $_POST["cboTipoCuenta"];
 
     GuardarUsuarioModel($cedula, $Nombre, $Contrasenna, $Correo, $Celular, $TipoUsuario, $TipoCuenta);
-    header("Location: ../index.php");
+    header("Location: servicios.php");
 }
 
 if (isset($_POST["btnAgregarTra"])) {
@@ -202,4 +210,6 @@ if (isset($_POST["btnGuardarCita"])) {
     GuardarCitasModel($cedula, $Nombre, $Correo);
     header("Location: mostrarCitas.php");
 }
+
+
 ?>
