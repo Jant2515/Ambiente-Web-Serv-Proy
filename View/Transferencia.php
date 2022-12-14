@@ -79,7 +79,7 @@ include_once __DIR__ . '/../Controller/UsuarioController.php';
                     <br>
                     <div class="row">
                             <div class="col-md-12" style="text-align:center;">
-                               <button class="btn btn-success btn-lg" name="btnAgregarTra" id="btnAgregarTra">
+                               <button onclick="mostrar()" class="btn btn-success btn-lg" name="btnAgregarTra" id="btnAgregarTra">
                                    <i class="fa fa-check-square"></i> PAGAR
                                </button>
                             </div>
@@ -88,7 +88,12 @@ include_once __DIR__ . '/../Controller/UsuarioController.php';
 
                 </div>
             </div>
-           
+            <script type="text/javascript">
+        function mostrar() {
+
+            swal('Gracias por contactarnos', 'Se envio con exito', 'success');
+        }
+    </script>
             
         </form>
         <footer>
