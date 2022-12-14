@@ -1,11 +1,12 @@
 <?php
-include_once 'ConnBD.php';
+include_once __DIR__ . '\..\Model\UsuarioModel.php';
 ?>
 
-<Html:5>
-<link rel="stylesheet" href="Login.css">
+<html>
+<link rel="stylesheet" href="css\Login.css">
 
 <form action="action_page.php" method="post">
+  <br>
 <img src="Images/logoN.png" alt="Logologin" class="Logologin">
   <div class="container">
     <label for="uname"><b>Usuario</b></label>
@@ -22,9 +23,9 @@ include_once 'ConnBD.php';
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancelar</button>
- <script src="Login.js"></script>
+ <script src="js\Login.js"></script>
     <span class="psw">Recuperar <a href="Olvido">mi contraseña?</a></span>
   </div>
 </form>
 
-</Html:5>
+</html>
